@@ -1,0 +1,351 @@
+body{
+    margin: 0%;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+hr{
+    border-top: 5px;
+    border-width: 2px;
+    width: 90%;
+}
+
+.main-p{
+    margin-left: 5%;
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+
+.main-container{
+    min-height: 100vh;
+    background-image: url("../Assets/CM-electric-home.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo{
+    width: 5%;
+    display: inline;
+    vertical-align: bottom;
+    margin-left: 5%;
+}
+
+.header-options{
+    display: inline;
+    text-align: center;
+    margin-left: 5%;
+    vertical-align: 100%;
+    font-size: 1.2rem;
+    color: aliceblue;
+}
+
+.the-new{
+    font-size: 1.2rem;
+    color: aliceblue;
+    margin-left: 6%;
+    margin-top: 3%;
+}
+
+.highlight{
+    font-size: 5rem;
+    color: aliceblue;
+    margin-left: 6%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.highlight-p{
+    font-size: 1.2rem;
+    color: aliceblue;
+    margin-left: 6%;
+    margin-top: 0%;
+}
+
+button{
+    background-color: rgba(26, 153, 192, 0.751);
+    color: aliceblue;
+    min-width: 15vw;
+    min-height: 5vh;
+    box-sizing: content-box;
+    margin-left: 6%;
+    margin-top: 1.5%;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1rem;
+    border: none;
+}
+
+.second-container{
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.purchasing-toolkit{
+    font-size: 1.2rem;
+}
+
+.second-highlight{
+    font-size: 1.5rem;
+    margin-bottom: 5%;
+}
+
+.reserve{
+    width: 30%;
+    float: left;
+    margin-left: 5%;
+}
+
+.icons{
+    width: 20%;
+    margin-bottom: 0%;
+}
+
+.actions-p{
+    margin-top: 0%;
+}
+
+.actions-button{
+    background-color: white;
+    border: black;
+    border-width: 3px;
+    border-style: solid;
+    color: black;
+    box-sizing: content-box;
+    margin: 0;
+}
+
+.service{
+    width: 30%;
+    display: inline-block;
+}
+
+.customize{
+    width: 30%;
+    float: right;
+    margin-right: 5%;
+}
+
+.third-container{
+    min-height: 80vh;
+    background-image: url("../Assets/CM-electric-back.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.third-highlight{
+    color: aliceblue;
+    margin-left: 6%;
+    padding-top: 20%;
+}
+
+
+.details-container{
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.details-image{
+    width: 25%;
+    float: left;
+    margin-right: 2.5%;
+}
+
+.details-header{
+    font-size: 1.2rem;
+}
+
+.footer{
+    background-color: rgb(247, 247, 247);
+    padding-bottom: 0.5%;
+    text-align: center;
+}
+
+.footer-p{
+    position: relative;
+    top: 1.5vh;
+    color: darkgray;
+    font-size: 0.8rem;
+}
+
+
+@media (min-width: 318px) and (max-width: 480px){
+    body{
+        margin: 0%;
+        font-family: 'Noto Sans', sans-serif;
+    }
+    
+    .main-container{
+        min-height: 50vh;
+        background-image: url("../Assets/CM-electric-home-narrow.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+
+    .header-options{
+        vertical-align: 10%;
+    }
+
+    .the-new{
+        margin-top: 10%;
+    }
+
+    .reserve{
+        width: 100%;
+        margin: 0%;
+    }
+
+    .service{
+        width: 100%;
+        margin: 0%;
+        margin-top: 10%;
+    }
+
+    .customize{
+        width: 100%;
+        margin: 0%;
+        margin-top: 10%;
+    }
+
+    .third-container{
+        min-height: 50vh;
+        margin-top: 50%;
+        background-image: url("../Assets/CM-electric-back-narrow.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        display: block;
+    }
+    
+    .third-highlight{
+        color: aliceblue;
+        margin-left: 6%;
+        padding-top: 40%;
+    }
+
+    .details-container{
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        text-align: center;
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+    
+    .details-image{
+        width: 80%;
+        float: none;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 800px){
+    body{
+        margin: 0%;
+        font-family: 'Noto Sans', sans-serif;
+    }
+    
+    .main-container{
+        min-height: 70vh;
+        background-image: url("../Assets/CM-electric-home-narrow.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+    
+    .header-options{
+        vertical-align: 10%;
+    }
+
+    .the-new{
+        margin-top: 10%;
+    }
+
+    .reserve{
+        width: 100%;
+        margin: 0%;
+    }
+
+    .service{
+        width: 100%;
+        margin: 0%;
+        margin-top: 10%;
+    }
+
+    .customize{
+        width: 100%;
+        margin: 0%;
+        margin-top: 10%;
+    }
+
+    .third-container{
+        min-height: 70vh;
+        margin-top: 50%;
+        background-image: url("../Assets/CM-electric-back-narrow.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        display: block;
+    }
+    
+    .third-highlight{
+        color: aliceblue;
+        margin-left: 6%;
+        padding-top: 50%;
+    }
+
+    .details-container{
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        text-align: center;
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+    
+    .details-image{
+        width: 80%;
+        float: none;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1200px){
+    body{
+        margin: 0%;
+        font-family: 'Noto Sans', sans-serif;
+    }
+    
+    .main-container{
+        min-height: 100vh;
+        background-image: url("../Assets/CM-electric-home-narrow.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .header-options{
+        vertical-align: 50%;
+    }
+
+    .third-container{
+        min-height: 100vh;
+        margin-top: 0%;
+        background-image: url("../Assets/CM-electric-back-narrow.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: block;
+    }
+    
+    .third-highlight{
+        color: aliceblue;
+        margin-left: 6%;
+        padding-top: 40%;
+    }
+
+    .details-image{
+        width: 50%;
+        float: left;
+    }
+
+}
