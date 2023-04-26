@@ -184,12 +184,58 @@ button{
         text-align: center;
     }
 
+    .logo{
+        width: 10%;
+        display: inline;
+        vertical-align: bottom;
+        margin-left: 1%;
+        position: relative;
+        right: 1vw;
+        top: 1vh;
+    }
+
     .header-options{
         vertical-align: 10%;
+        margin-left: 0%;
+    }
+
+    .main-p{
+        margin-left: 0%;
+        color: aliceblue;
+        font-size: 1.2rem;
     }
 
     .the-new{
         margin-top: 10%;
+        margin-left: 0%;
+    }
+
+    .highlight{
+        font-size: 5rem;
+        color: aliceblue;
+        margin-left: 0%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+    
+    .highlight-p{
+        font-size: 1.2rem;
+        color: aliceblue;
+        margin-left: 0%;
+        margin-top: 0%;
+    }
+    
+    button{
+        background-color: rgba(26, 153, 192, 0.751);
+        color: aliceblue;
+        min-width: 15vw;
+        min-height: 5vh;
+        box-sizing: content-box;
+        margin-left: 0%;
+        margin-top: 1.5%;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 1rem;
+        border: none;
     }
 
     .reserve{
@@ -254,13 +300,59 @@ button{
         background-repeat: no-repeat;
         text-align: center;
     }
+
+    .logo{
+        width: 12%;
+        display: inline;
+        vertical-align: bottom;
+        margin-left: 1%;
+        position: relative;
+        right: 15%;
+        top: 1vh;
+    }
     
     .header-options{
         vertical-align: 10%;
+        margin-left: 0%;
+    }
+
+    .main-p{
+        margin-left: 0%;
+        color: aliceblue;
+        font-size: 1.2rem;
     }
 
     .the-new{
         margin-top: 10%;
+        margin-left: 0%;
+    }
+
+    .highlight{
+        font-size: 5rem;
+        color: aliceblue;
+        margin-left: 0%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+    
+    .highlight-p{
+        font-size: 1.2rem;
+        color: aliceblue;
+        margin-left: 0%;
+        margin-top: 0%;
+    }
+    
+    button{
+        background-color: rgba(26, 153, 192, 0.751);
+        color: aliceblue;
+        min-width: 15vw;
+        min-height: 5vh;
+        box-sizing: content-box;
+        margin-left: 0%;
+        margin-top: 1.5%;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 1rem;
+        border: none;
     }
 
     .reserve{
@@ -322,6 +414,16 @@ button{
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
+    }
+
+    .logo{
+        width: 10%;
+        display: inline;
+        vertical-align: bottom;
+        margin-left: 5%;
+        position: relative;
+        right: 1vw;
+        top: 1vh;
     }
 
     .header-options{
