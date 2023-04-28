@@ -23,20 +23,34 @@ hr{
     background-repeat: no-repeat;
 }
 
+.header-flex{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+}
+
 .logo{
     width: 5%;
     display: inline;
     vertical-align: bottom;
     margin-left: 5%;
+    position: relative;
+    right: 1vw;
+    top: 1vh;
 }
 
 .header-options{
     display: inline;
     text-align: center;
-    margin-left: 5%;
-    vertical-align: 100%;
+    flex-basis: 15vw;
     font-size: 1.2rem;
     color: aliceblue;
+}
+
+.header-options:hover{
+    text-decoration: underline whitesmoke;
+    text-underline-offset: 50%;
 }
 
 .the-new{
@@ -72,6 +86,10 @@ button{
     font-family: 'Noto Sans', sans-serif;
     font-size: 1rem;
     border: none;
+}
+
+button:hover{
+    text-decoration: underline;
 }
 
 .second-container{
@@ -155,10 +173,53 @@ button{
     font-size: 1.2rem;
 }
 
+.social-media-logos{
+    height: 2%;
+    width: 2%;
+}
+
+.contact-container{
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    background-color: #F5F5F5;
+    margin-bottom: 0;
+}
+
+.contact-card{
+    flex-basis: 1;
+    width: 40%;
+}
+
+.discover-card{
+    flex-basis: 1;
+    width: 40%;
+}
+
+.social-media-card{
+    margin-top: 3%;
+    flex-basis: 1;
+    width: 80%;
+    height: max-content;
+}
+
+.contact-titles{
+    margin-bottom: 10%;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
 .footer{
-    background-color: rgb(247, 247, 247);
-    padding-bottom: 0.5%;
+    background-color: #F5F5F5;
+    padding-bottom: 1.5%;
+    padding-top: 1.5%;
     text-align: center;
+    margin-top: 0;
 }
 
 .footer-p{
@@ -182,6 +243,16 @@ button{
         background-position: center center;
         background-repeat: no-repeat;
         text-align: center;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    .header-flex{
+        display: none;
+    }
+
+    hr{
+        display: none;
     }
 
     .logo{
@@ -282,6 +353,50 @@ button{
     .details-image{
         width: 80%;
         float: none;
+    }
+
+    .social-media-logos{
+        height: 5%;
+        width: 5%;
+    }
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+        width: 100%;
+        height: 100%;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10%;
+        padding-top: 5%;
+        background-color: #F5F5F5;
+    }
+    
+    .contact-card{
+        flex-basis: 1;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .discover-card{
+        flex-basis: 1;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .social-media-card{
+        margin-top: 3%;
+        flex-basis: 1;
+        width: 100%;
+        text-align: center;
+        height: max-content;
+    }
+
+    .contact-titles{
+        margin-bottom: 3vh;
+        font-size: 1.2rem;
+        font-weight: bold;
     }
 
 }
@@ -400,6 +515,50 @@ button{
         width: 80%;
         float: none;
     }
+
+    .social-media-logos{
+        height: 5%;
+        width: 5%;
+    }
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+        width: 100%;
+        height: 100%;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10%;
+        padding-top: 5%;
+        background-color: #F5F5F5;
+    }
+    
+    .contact-card{
+        flex-basis: 1;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .discover-card{
+        flex-basis: 1;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .social-media-card{
+        margin-top: 3%;
+        flex-basis: 1;
+        width: 100%;
+        text-align: center;
+        height: max-content;
+    }
+
+    .contact-titles{
+        margin-bottom: 3vh;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
 }
 
 @media (min-width: 801px) and (max-width: 1200px){
@@ -450,4 +609,15 @@ button{
         float: left;
     }
 
+    .contact-container{
+        display: flex;
+        width: 100%;
+        height: 30vh;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        padding-bottom: 10%;
+        padding-top: 10%;
+        background-color: #F5F5F5;
+    }
 }
