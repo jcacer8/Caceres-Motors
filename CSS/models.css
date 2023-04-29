@@ -1,11 +1,12 @@
 body{
     margin: 0%;
     font-family: 'Noto Sans', sans-serif;
+    background-color: white;
 }
 
 .main-container{
     min-height: 80vh;
-    background-image: url("../Assets/alcera2.jpg");
+    background-image: url("../Assets/models-banner.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -15,6 +16,7 @@ hr{
     border-top: 5px;
     border-width: 2px;
     width: 90%;
+    border-color: black;
 }
 
 .main-p{
@@ -46,16 +48,16 @@ hr{
     text-align: center;
     flex-basis: 15vw;
     font-size: 1.2rem;
-    color: aliceblue;
+    color: black;
 }
 
 .header-options a{
-    color: aliceblue;
+    color: black;
     text-decoration: none;
 }
 
 .header-options:hover{
-    text-decoration: underline whitesmoke;
+    text-decoration: underline black;
     text-underline-offset: 50%;
 }
 
@@ -81,53 +83,106 @@ hr{
     margin-top: 0%;
 }
 
-.pricing-container{
+.vehicle-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 3fr;
+    grid-template-rows:  1fr repeat(6, 0.5fr);
+    width: 90vw;
+    height: auto;
+    background-color: white;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    gap: 0.5vw;
+}
+
+.title img{
+    width: 25vw;
+}
+
+.spec-icons{
+    width: 5vw;
+    height: 5vw;
+}
+
+.title{
+    grid-area: 1 / 1 / 2 / 5;
     display: flex;
-    height: 50vh;
-    gap: 8rem;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    position: relative;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    justify-content: center;
+    height: max-content;
 }
 
-.pricing-container h2{
-    position: absolute;
-    top: 8%;
-    font-size: 1.4rem;
+.title h3{
+    font-size: 1.6rem;
+    font-weight: bold;
 }
 
-.price-card{
-    min-width: 200px;
-    max-width: 600px;
-    background-color: #F5F5F5;
-    padding-top: 0.5%;
-    padding-bottom: 1.5%;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    border-radius: 8%;
+.spec-class{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     text-align: center;
 }
 
-.pricing-title{
-    margin-top: 5%;
+.spec-title{
     font-size: 1.2rem;
-    font-weight: 50%;
+    font-weight: bold;
 }
 
-.price{
+.data{
     font-size: 1.4rem;
-    font-weight: bolder;
+    text-align: center;   
 }
 
-.buy{
-    border-style: none;
-    background-color: rgba(26, 153, 192, 0.751);
-    border-radius: 10%;
-    padding: 3%;
-    color: aliceblue;
+.hp{
+    grid-area: 2 / 1 / 5 / 2;
+    background-color: #AFD3E2;
+    justify-content: space-evenly;
 }
+
+.torque{
+    grid-area: 5 / 1 / 8 / 2;
+    background-color: #AFD3E2;
+    justify-content: space-evenly;
+}
+
+.battery{
+    grid-area: 2 / 3 / 4 / 4;
+    background-color:#AFD3E2;
+}
+
+.range{
+    grid-area: 4 / 3 / 6 / 4;
+    background-color: #AFD3E2;
+}
+
+.chargetime{
+    grid-area: 6 / 3 / 8 / 4;
+    background-color: #AFD3E2;
+}
+
+.acceleration{
+    grid-area: 2 / 2 / 5 / 2;
+    background-color: #F6F1F1;
+    justify-content: space-evenly;
+}
+
+.top-speed{
+    grid-area: 5 / 2 / 8 / 3;
+    background-color: #F6F1F1;
+    justify-content: space-evenly;
+}
+
+.others{
+    grid-area: 2 / 4 / 8 / 5;
+    background-color: #F6F1F1;
+    justify-content: center;
+}
+
 
 .contact-container{
     display: flex;
@@ -185,103 +240,128 @@ hr{
     font-size: 0.8rem;
 }
 
+
 @media (min-width: 318px) and (max-width: 480px){
 
-.main-container{
-    padding-top: 2%;
-}
+    .main-container{
+        padding-top: 2%;
+        min-height: 50vh;
+    }
+    
+    .header-flex{
+        display: none;
+    }
+    
+    hr{
+        display: none;
+    }
+    
+    .main-p{
+        text-align: center;
+        margin-left: 0;
+        margin-top: 20%;
+    }
+    
+    .the-new{
+        margin-left: 0%;
+        text-align: center;
+    }
+    
+    .highlight{
+        margin-left: 0%;
+        text-align: center;
+        font-size: 3rem;
+    }
+    
+    .highlight-p{
+        margin-left: 0%;
+        text-align: center;
+    }
 
-.header-flex{
-    display: none;
-}
+    .vehicle-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:  1fr repeat(6, 100px);
+        gap: 2vw;
+    }
 
-hr{
-    display: none;
-}
+    .spec-title{
+        font-size: 1rem;
+    }
 
-.main-p{
-    text-align: center;
-    margin-left: 0;
-    margin-top: 20%;
-}
+    .data{
+        font-size: 0.8rem;
+    }
 
-.the-new{
-    margin-left: 0%;
-    text-align: center;
-}
+    .battery{
+        justify-content: center;
+    }
+    
+    .range{
+        justify-content: center;
+    }
+    
+    .chargetime{
+        grid-area: 6 / 3 / 8 / 4;
+        justify-content: center;
+    }
 
-.highlight{
-    margin-left: 0%;
-    text-align: center;
-}
+    .others{
+        display: none;
+    }
+    
+    .social-media-logos{
+        height: 5%;
+        width: 5%;
+    }
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+        width: 100%;
+        height: 100%;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10%;
+        padding-top: 5%;
+        background-color: #F5F5F5;
+    }
 
-.highlight-p{
-    margin-left: 0%;
-    text-align: center;
-}
+    .contact-card{
+        flex-basis: 1;
+        width: 100%;
+        text-align: center;
+    }
 
-.pricing-container{
-    flex-direction: column;
-    gap: 1rem;
-    height: 100%;
-}
+    .discover-card{
+        flex-basis: 1;
+        width: 100%;
+        text-align: center;
+    }
 
-.pricing-container h2{
-    position: relative;
-}
+    .social-media-card{
+        margin-top: 3%;
+        flex-basis: 1;
+        width: 100%;
+        text-align: center;
+        height: max-content;
+    }
 
-.price-card{
-    margin-top: 10%;
-}
-
-
-.social-media-logos{
-    height: 5%;
-    width: 5%;
-}
-.contact-container{
-    display: flex;
-    flex-direction: column;
-    gap: 5vh;
-    width: 100%;
-    height: 100%;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 10%;
-    padding-top: 5%;
-    background-color: #F5F5F5;
-}
-
-.contact-card{
-    flex-basis: 1;
-    width: 100%;
-    text-align: center;
-}
-
-.discover-card{
-    flex-basis: 1;
-    width: 100%;
-    text-align: center;
-}
-
-.social-media-card{
-    margin-top: 3%;
-    flex-basis: 1;
-    width: 100%;
-    text-align: center;
-    height: max-content;
-}
-
-.contact-titles{
-    margin-bottom: 3vh;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
+    .contact-titles{
+        margin-bottom: 3vh;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    
 }
 
 @media (min-width: 481px) and (max-width: 800px){
     
+    .main-container{
+        min-height: 30vh;
+    }
+
     .main-p{
         text-align: center;
         margin-left: 0;
@@ -296,6 +376,7 @@ hr{
     .highlight{
         margin-left: 0%;
         text-align: center;
+        font-size: 3rem;
     }
     
     .highlight-p{
@@ -303,18 +384,15 @@ hr{
         text-align: center;
     }
 
-    .pricing-container{
-        flex-direction: column;
-        gap: 1rem;
-        height: 100%;
+    .vehicle-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:  3fr repeat(6 1fr);
+        gap: 2vw;
     }
-    
-    .pricing-container h2{
-        position: relative;
-    }
-    
-    .price-card{
-        margin-top: 10%;
+
+    .others{
+        display: none;
     }
 
     .social-media-logos{
@@ -364,6 +442,10 @@ hr{
 
 @media (min-width: 801px) and (max-width: 900px){
    
+    .main-container{
+        min-height: 40vh;
+    }
+
     .main-p{
         text-align: center;
         margin-left: 0;
@@ -378,6 +460,7 @@ hr{
     .highlight{
         margin-left: 0%;
         text-align: center;
+        font-size: 3rem;
     }
     
     .highlight-p{
@@ -385,18 +468,15 @@ hr{
         text-align: center;
     }
 
-    .pricing-container{
-        flex-direction: column;
-        gap: 1rem;
-        height: 100%;
+    .vehicle-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:  3fr repeat(6 1fr);
+        gap: 2vw;
     }
-    
-    .pricing-container h2{
-        position: relative;
-    }
-    
-    .price-card{
-        margin-top: 10%;
+
+    .others{
+        display: none;
     }
 
     .social-media-logos{
