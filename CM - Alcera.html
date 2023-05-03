@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CM - Alcera</title>
     <link rel="icon" href="Assets/CM motors logo.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/alcera.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,15 +14,49 @@
 </head>
 <body>
     <div class="main-container">
-
+       
+        <nav class="navbar navbar-dark navbar-expand-lg pt-3 mb-5">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html"><img class="logo" src="./Assets/CM motors logo transparent gray.png" alt="CM logo gray"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link header-options" aria-current="page" href="./models.html">Models</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link header-options" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item dropdown" style="font-size: 1.2rem;">
+                    <a class="nav-link dropdown-toggle header-options" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Quote & Buy
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Alcera</a></li>
+                      <li><a class="dropdown-item" href="#">Cadence</a></li>
+                      <li><a class="dropdown-item" href="#">Pandora</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Corporate</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search" style="align-items: center;">
+                  <input class="form-control me-2" type="search" placeholder="Find your CM" aria-label="Search" style="height: fit-content; text-align: center;">
+                  <button class="btn btn-dark border-0" type="submit" style="height: fit-content; background-color: rgba(26, 153, 192, 0.751);">Search</button>
+                </form>
+              </div>
+            </div>
+        </nav>
+        <!-- This old flexbox header is to be deprecated by a bootstrap navbar
         <div class="header-flex">
-            <a href="index.html" class="main-logo-cta"><img src="Assets/CM motors logo transparent gray.png" class="logo" alt="CM logo"></a>
+            <img src="Assets/CM motors logo transparent gray.png" class="logo" alt="CM logo">
             <span class="header-options"><a href="models.html">Models</a></span>
             <span class="header-options">Pricing</span>
             <span class="header-options">Quote and Buy</span>
             <span class="header-options">About CM</span>
-        </div>
-        <hr>
+        </div>-->        
         <p class="main-p"><strong>The pleasure</strong> of driving</p>
         <p class="the-new"><strong>The new</strong></p>
         <h2 class="highlight">Alcera</h2>
@@ -81,5 +116,6 @@
         <p class="footer-p">© Caceres Motors group 2023</p>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>

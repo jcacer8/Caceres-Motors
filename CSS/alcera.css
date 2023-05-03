@@ -34,17 +34,9 @@ hr{
 
 .logo{
     width: 50px;
-    display: inline;
-    margin-left: 5%;
-    position: relative;
-    right: 1vw;
-    top: 1vh;
 }
 
 .header-options{
-    display: inline;
-    text-align: center;
-    flex-basis: 15vw;
     font-size: 1.2rem;
     color: aliceblue;
 }
@@ -79,6 +71,10 @@ hr{
     color: aliceblue;
     margin-left: 6%;
     margin-top: 0%;
+}
+
+button:hover{
+    text-decoration: underline;
 }
 
 .pricing-container{
@@ -137,7 +133,7 @@ hr{
     justify-content: center;
     align-content: center;
     padding-bottom: 5%;
-    padding-top: 5%;
+    padding-top: 10%;
     background-color: #F5F5F5;
     margin-bottom: 0;
 }
